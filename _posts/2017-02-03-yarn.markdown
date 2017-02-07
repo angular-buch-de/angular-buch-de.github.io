@@ -1,0 +1,88 @@
+---
+layout:     post
+title:      "yarn statt npm install"
+subtitle:   "yarn als (schnellere) Alternative zu npm nutzen"
+date:       2017-02-03 12:00:00
+author:     "Christoph Höller"
+header-img: "img/post-bg-01.jpg"
+---
+
+Auch wenn das Angular-CLI ein sehr komfortables Tool zur Entwicklung von Angular Anwendungen ist, werden Sie bei der Arbeit mit den Beispielquelltexten eventuell schon bermerkt haben, dass insbesondere das initiale installieren der Abhängigkeiten über <code class="typescript"> npm install </code> durchaus einige Zeit in Ansprunch nehmen kann.
+
+
+Genau an dieser Stelle setzt der von Facebook entwickelte Packagemanager **yarn** an. So wirbt das Tool auf der Projektseite [https://yarnpkg.com/](https://yarnpkg.com/) mit dem Slogan:
+
+_FAST, RELIABLE, AND SECURE DEPENDENCY MANAGEMENT._
+
+Möchten Sie **yarn** nun für die Installation und das Management Ihrer Abhänigkeiten verwenden, so müssen Sie zunächst einmal global auf Ihrem System installieren. Neben der Möglichkeit das Tool über Betriebssystem eigene Packet-Manager zu installieren, ist außerdem auch eine Installation per **npm** möglich:
+
+<code class="typescript">
+npm install -g yarn
+</code>
+
+Wechseln Sie nun in ein beliebiges npm-Projekt (also auch in ein beliebiges Angular-CLI-Projekt) und führen dort den Befehl
+
+<code class="typescript">
+yarn
+</code>
+
+aus, so werden Sie feststellen, dass das Tool ohne weitere Maßnahmen damit beginnt, die Abhänigkeiten Ihres Projektes herunterzuladen und im <code>node_modules</code>-Ordner abzulegen. Der Grund hierfür liegt darin, dass *yarn* ebenfalls die Datei <code>package.json</code> als Grundlage für die Konfiguration der Abhängigkeiten verwendet.
+
+## Geschwindigkeit
+
+An dieser Stelle werden Sie bereits merken, dass die Installation der Abhängikeiten deutlich schneller vonstatten geht als bei der Installation über npm. Der Performance-Gewinn basiert dabei im wesentlichen auf 2 Tatsachen
+
+ 1. **yarn** parallelisiert die Installation von Abhängigkeiten.
+ 2. Auf Basis eines globalen Caches stehen alle Abhängigkeiten die bereits einmal installiert wurden sehr schnell für andere Projekte zur Verfügung.
+
+So konnte ich bei der Installation der Abhänigkeiten des *Formular-Kapitel*-Beispiels-Codes durch die Verwendung von **yarn** die folgenden Geschwindigkeitssteigerungen erzielen:
+
+
+|                                                                                            | npm         | yarn        |
+|--------------------------------------------------------------------------------------------|-------------|-------------|
+| erste Installation der Abhängigkeiten                                                      | 57 Sek. | 24 Sek. |
+| erneute Installation der Abhängigkeiten (nach dem Löschen des node_modules-Verzeichnisses) | 57 Sek. | 10 Sek. |
+| anschließende Installation der Abhängigkeiten des Sprachkern-Kapitels                      | 57 Sek. | 12 Sek. |
+
+
+
+## Verlässlichkeit
+
+Ein Blick in das Projektverzeichnis wird Ihnen außerdem eine weitere Neuerung zeigen. So werden Sie dort nun die datei <code>yarn.lock</code> finden. Diese Datei hat die Aufgabe für jede Abhängigkeit exakt festzulegen *welche Version* installiert werden soll und wo die Datei zu finden ist. Das folgende Listing zeigt einen typischen Eintrag der <code>yarn.lock</code>:
+
+<pre><code class="typescript">
+"@angular/core@^2.4.3":
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-2.4.4.tgz#eafef7bbdefea321fa5e79998bb2f6707c70729d"
+</code></pre>
+
+So ist es bei der Arbeit mit **npm** üblich *nicht exakte* Versionsnummern der Form
+
+<pre><code class="json">
+  "dependencies": {
+    "@angular/core": "^2.4.3",
+    ...
+  },
+</code></pre>
+
+zu hinterlegen. Diese Technik ist zwar einerseits insofern bequem, dass Sie ohne Änderungen der Konfiguration immer weiter mit Versions-Updates versorgt werden. Auf der anderen Seite kann der Verzicht auf exakte Versionsnummern aber auch dazu führen, dass Sie auf Ihrem Rechner eine völlig andere Software kompilieren als der Kollege am nächsten Schreibtisch. Hier sorgt die <code>yarn.lock</code> dafür, dass Sie sich in jedem Fall darauf verlassen können, dass Abängigkeiten die eimmal über **yarn** installiert werden konnten auch in Zukunft stabil bleiben.
+
+## npm für die Ausführung von Skripten
+
+An dieser Stelle ist es im auch interessant zu wissen, dass sich **yarn** lediglich auf die *Installation* von Abhängigkeiten konzentriert. Ds Ausführen von Skripten zur Kompilierung oder zum Start der Software erfolgen weiterhin per npm!
+
+
+## Fazit
+
+Auch wenn sich **npm** in den letzten Jahren immer mehr zum defacto-Standard für die Installation von JavaScript-Abhänigkeiten entwickelt hat, kann insbesondere der unbedachte Einsatz von nicht exakten Versionsnummer schnell zu Chaos in Ihrer Build-Chain führen. **yarn** schafft hier Abhilfe und sorgt gleichzeitig noch für eine deutlichere Performancesteigerung bei der Installation. Insbesondere bei der Arbeit mit einer Vielzahl von Projekten - wie z.B. bei der Arbeit mit den Beispielquelltexten des Buches - kann **yarn** somit für eine echte Arbeitserleichtung sorgen!
+
+<!--
+<pre><code class="typescript">
+class Foo {
+  getFoo() {
+    return "EEK";
+  }
+}
+
+</code></pre>
+-->
