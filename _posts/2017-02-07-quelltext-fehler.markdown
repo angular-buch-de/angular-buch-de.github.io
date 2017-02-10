@@ -2,7 +2,7 @@
 layout:     post
 title:      "Fehler in den Beispielquelltexten (Internationalisierung)"
 subtitle:   ""
-date:       2017-02-03 12:00:00
+date:       2017-02-07 12:00:00
 author:     "Christoph Höller"
 header-img: "img/post-bg-01.jpg"
 ---
