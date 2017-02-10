@@ -67,9 +67,6 @@ So ist es bei der Arbeit mit **npm** üblich *nicht exakte* Versionsnummern der 
 
 zu hinterlegen. Diese Technik ist zwar einerseits insofern bequem, dass Sie ohne Änderungen der Konfiguration immer weiter mit Versions-Updates versorgt werden. Auf der anderen Seite kann der Verzicht auf exakte Versionsnummern aber auch dazu führen, dass Sie auf Ihrem Rechner eine völlig andere Software kompilieren als der Kollege am nächsten Schreibtisch. Hier sorgt die <code>yarn.lock</code> dafür, dass Sie sich in jedem Fall darauf verlassen können, dass Abängigkeiten die eimmal über **yarn** installiert werden konnten auch in Zukunft stabil bleiben.
 
-## npm für die Ausführung von Skripten
-
-An dieser Stelle ist es im auch interessant zu wissen, dass sich **yarn** lediglich auf die *Installation* von Abhängigkeiten konzentriert. Ds Ausführen von Skripten zur Kompilierung oder zum Start der Software erfolgen weiterhin per npm!
 
 
 ## Fazit
