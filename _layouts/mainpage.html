@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          {% if page.description %}<hr class="small">{% endif %}
+          <span class="subheading">{{ page.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+  <div class="row">
+    <div class="col-lg-9 col-md-9 col-sm-8 ">
+      {{ content }}
+    </div>
+    <div class="col-lg-3 col-md-3  col-sm-3 ">
+      <h4>Neuigkeiten</h4>
+      <ul class="blog-summary">
+        {% for post in site.posts %}
+        <li>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}} </a>
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div>
+
+<hr>

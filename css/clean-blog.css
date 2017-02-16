@@ -411,3 +411,21 @@ body {
   background-position: center center;
   background-size: cover;
 }
+
+ul.blog-summary {
+  list-style-type: none;
+  font-size: smaller;
+  padding-left: 0px;
+  max-width: 300px;
+}
+
+ul.blog-summary li:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0px;
+  background: lightgray;
+}
+
+
