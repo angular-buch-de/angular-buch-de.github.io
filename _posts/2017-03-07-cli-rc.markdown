@@ -1,0 +1,47 @@
+---
+layout:     post
+title:      "Release Candidate der Angular-CLI bringt Breaking Changes"
+date:       2017-03-07 12:00:00
+author:     "Christoph Höller"
+header-img: "img/post-bg-01.jpg"
+---
+
+Im Buch stelle ich Ihnen in Kapitel 2 das Angular Commandline Interface (CLI) vor. Wie dort beschrieben befand sich das CLI zum Zeitpunkt der Buchentstehung mitten in der Beta-Phase.
+
+Dies hat sich mittlerweile geändert: Seit letzter Woche befindet sich das Projekt in der Release-Candidate (RC) Phase und geht mit großen Schritten auf das finale Release zu. Die gute Nachricht lautet an dieser Stelle, dass die meisten im Buch beschriebenen Themen unverändert funktionieren, so dass ich mich in diesem Artikel lediglich auf die Breaking-Changes konzentrieren möchte.
+
+## @angular/cli statt angular-cli
+
+Der wichtigeste Unterschied zur im Buch beschriebenen Beta-Version besteht darin, dass das Angular-CLI im Rahmen der RC-Veröffentlichung in ein neues **npm**-Packet umgezogen wurde. Erfolgte die Installation bislang über das eigene Packet **angular-cli** ist es nun Teil des (bereits von allen anderen Angular-Bestandteilen verwendeten) Packets **@angular**. Die Installation der neuen Version erfolgt somit über den Befehl:
+
+<pre><code>npm install -g @angular/cli</code></pre>
+
+Haben Sie bereits eine "alte" Version installiert sollten Sie diese vorher deinstallieren:
+
+<pre><code>npm uninstall -g angular-cli
+npm install -g @angular/cli@latest</code></pre>
+
+
+## .angular-cli.json statt angular-cli.json
+
+Eine weitere kleine (aber entscheidende) Änderung besteht darin, dass die Datei zur Konfiguartion des CLI-Projekts in der neuesten Version von **angular-cli.json** in **.angular-cli.json** umbenannt wurde. Durch den vorangestellten Punkt soll hier ausgedrückt werden, dass es sich um eine Steuerungsdatei handelt.
+
+## Kein ng init mehr
+
+Der in Abschnitt 2.3 vorgestellte <code class="typescript">ng init</code> Befehl wurde aus dem aktuellen Release-Candidate entfernt. Der Grund hierfür ist, dass die bisherige Implementierung zu mehr Problemen geführt hat, als gelöst wurden. So hatten diverse Nutzer das Problem dass von Ihnen angepasste Dateien aus Versehen durch den CLI-Blueprint ersetzt wurden. In zukünftigen Versionen soll das CLI eine deutlich vereinfachte Update-Strategie bereitstellen!
+
+## skip-install statt skip-npm
+
+Das in Abschnitt 2.2.1 vorgestellte Flag <code class="typescript">skip-install</code> das verhindert, dass nach einem <code>ng new</code> automatisch ein <code>npm install</code> ausgeführt wurde, wurde in der neuen Version in <code>skip-install</code> umbennant. Möchten Sie also ein Projekt erzeugen ohne in einem Zug die Abhängigkeiten zu installieren, können Sie dies über den Befehl
+
+<pre><code>ng new --skip-install</code></pre>
+
+erreichen. Obwohl die Standard-Implementierung des CLI npm (und nicht yarn) zur Verwaltung von Abhängigkeiten verwendet, haben Sie über das Flag dennoch die Möglichkeit den Installations-Vorgang über yarn wie folgt zu beschleunigen:
+
+<pre><code>ng new --skip-install
+yarn</code></pre>
+
+(Details zur Verwendung von yarn finden Sie im Artikel: [yarn statt npm install]({% post_url 2017-02-03-yarn %})
+
+
+
