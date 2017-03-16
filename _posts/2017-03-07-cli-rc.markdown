@@ -42,6 +42,3 @@ erreichen. Obwohl die Standard-Implementierung des CLI npm (und nicht yarn) zur 
 yarn</code></pre>
 
 (Details zur Verwendung von yarn finden Sie im Artikel: [yarn statt npm install]({% post_url 2017-02-03-yarn %})
-
-
-

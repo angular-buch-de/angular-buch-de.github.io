@@ -428,4 +428,26 @@ ul.blog-summary li:after {
   background: lightgray;
 }
 
+div.follow-info {
+  font-size: small;
+  max-width: 300px;
+  padding: 15px
+}
+
+.follow-text {
+  display: inline-block;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.buy-now-link {
+  position: absolute;
+  bottom:   0;
+}
+
 
