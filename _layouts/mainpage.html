@@ -25,6 +25,7 @@ layout: default
     <div class="col-lg-3 col-md-3  col-sm-3 ">
       <h4>Neuigkeiten</h4>
       <ul class="blog-summary">
+        <li>      <a href="{{ site.baseurl }}/ng4">Auf Angular 4.0 aktualisierte Quelltexte herunterladen!</a></li>
         {% for post in site.posts %}
         <li>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}} </a>
