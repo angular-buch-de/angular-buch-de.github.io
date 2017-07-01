@@ -51,6 +51,7 @@ hr.small {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
+  font-size: 16px !important;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -140,14 +141,14 @@ hr.small {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 50px;
+  padding: 70px 0 50px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 70px 0;
   }
 }
 .intro-header .site-heading,
@@ -411,43 +412,99 @@ body {
   background-position: center center;
   background-size: cover;
 }
-
+@media (max-width: 767px) {
+  #carousel-example-generic {
+    display: none;
+  }
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 10px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.testimonal {
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: none;
+}
+.testimonal .testimonial__quote {
+  text-shadow: none;
+  color: #777;
+  font-size: 16px;
+  font-style: italic;
+}
+.testimonal .testimonial__source {
+  padding-top: 10px;
+  text-shadow: none;
+  color: #555;
+  font-weight: 700;
+}
+.book-overview {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.book-overview .cover {
+  min-width: 326px;
+}
+.book-overview .order-now {
+  flex: 1 1 180px;
+  /* or 1 0 100px, and no more need in min-width at all */
+  min-width: 180px;
+}
+.book-overview img {
+  height: 300px;
+}
 ul.blog-summary {
   list-style-type: none;
   font-size: smaller;
-  padding-left: 0px;
-  max-width: 300px;
+  padding-left: 0;
+  padding-right: 15px;
 }
-
 ul.blog-summary li:after {
   content: "";
   display: block;
   height: 1px;
   width: 100%;
-  margin: 10px 0px;
+  margin: 10px 0;
   background: lightgray;
 }
-
 div.follow-info {
   font-size: small;
   max-width: 300px;
-  padding: 15px
+  padding: 15px;
 }
-
 .follow-text {
   display: inline-block;
 }
-
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
+  display: flex;
 }
-
 .buy-now-link {
   position: absolute;
-  bottom:   0;
+  bottom: 0;
 }
-
-
+.overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0;
+  color: #ccc;
+  max-width: 90%;
+}
+.navbar-toggle {
+  background: #ffffff;
+  z-index: 2;
+}

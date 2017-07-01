@@ -5,7 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
 
-    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta property="og:url" content="http://angular-buch.de/">
+    <meta property="og:title" content="Angular: Das umfassende Handbuch zum JavaScript-Framework. Einführung, Praxis, TypeScript und ECMAScript 2015">
+    <meta property="og:description" content="{{ site.description }}">
+
+    <meta property="og:image" content="http://www.angular-buch.de/img/cover.jpg">
+    <meta property="og:image:width" content=" 868">
+    <meta property="og:image:height" content="800">
+
+    <meta property="og:type" content="book">
+
+    <meta property="book:author" content="https://www.xing.com/profile/Christoph_Hoeller">
+
+    <meta property="book:isbn" content="978-3-8362-3914-1">
+    <meta property="book:release_date" content="2017-01-31">
+    <meta property="book:tag" content="Angular">
+    <meta property="book:tag" content="AngularJS">
+    <meta property="book:tag" content="TypeScript">
+    <meta property="book:tag" content="ECMAScript 2015">
+    <meta property="book:tag" content="HTML5">
+    <meta property="book:tag" content="RxJS">
+    <meta property="book:tag" content="Redux">
+    <meta property="book:tag" content="Jasmine">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AngularBuch">
+    <meta name="twitter:creator" content="@chris_hoeller">
+    <meta name="twitter:title" content="Angular: Das umfassende Handbuch zum JavaScript-Framework. Einführung, Praxis, TypeScript und ECMAScript 2015">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="http://www.angular-buch.de/img/cover.jpg">
+
+
+
+
+
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 

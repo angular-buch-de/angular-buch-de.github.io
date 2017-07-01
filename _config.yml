@@ -1,9 +1,9 @@
 # Site settings
-title: Angular
+title: Angular - Das umfassende Handbuch
 header-img: img/bg-home.jpg
-email: your-email@yourdomain.com
-copyright_name: Christoph Höller / Sebastian Springer
-description: "Angular, Angular 2"
+email: mail@angular-buch.de
+copyright_name: Christoph Höller
+description: "Die Homepage zum JavaScript Fachbuch 'Angular das umfassende Handbuch' aus dem Rheinwerk-Verlag. Jetzt bestellen. Kickstart, Komponenten-Konzepte, Formulare, Routing, RxJS, TypeScript, Performance-Optimierung. Mit Angular 4 Unterstützung"
 baseurl: ""
 url: "http://angular-buch.de"
 twitter_username: chris_hoeller
