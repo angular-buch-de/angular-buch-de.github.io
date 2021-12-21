@@ -1,0 +1,31 @@
+.accordion {
+  color: #ffffff;
+
+  &-item {
+    background-color: var(--bs-secondary);
+    margin-bottom: 11px;
+    border: none;
+  }
+
+  &-button {
+    position: relative;
+    background-color: var(--bs-secondary);
+    color: inherit;
+    padding-left: var(--spacing-m);
+
+    &:focus, &:not(.collapsed) {
+      box-shadow: none;
+    }
+
+    &:not(.collapsed) {
+      background-color: var(--bs-secondary);
+      color: inherit;
+    }
+  }
+
+  &-subheading {
+    position: absolute;
+    bottom: var(--spacing-s);
+    left: var(--spacing-m);
+  }
+}

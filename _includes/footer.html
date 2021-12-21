@@ -1,9 +1,8 @@
 <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <!--
+<footer class="container-fluid bg-secondary">
+  <div class="container">
+
+    <!--
                 <ul class="list-inline text-center">
                     <li>
                         <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
@@ -35,7 +34,7 @@
                     {% endif %}
                     {% if site.github_username %}
                     <li>
-                        <a href="https://github.com/{{ site.github_username }}">
+                        <a href="https://github.com/{{ site.github_username }}"> text-muted
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -55,17 +54,9 @@
                     {% endif %}
                 </ul>
                 -->
-                <p class="copyright text-muted">Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }} <a href="{{ site.baseUrl }}/impress">Impressum</a> </p>
-            </div>
-        </div>
-    </div>
+    <p class="copyright">
+      Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}
+      <a href="{{ site.baseUrl }}/impress">Impressum</a>
+    </p>
+  </div>
 </footer>
-
-<!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>

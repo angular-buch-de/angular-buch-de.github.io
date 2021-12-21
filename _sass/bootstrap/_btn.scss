@@ -1,0 +1,26 @@
+.btn {
+  border-radius: unset;
+  border: none;
+  padding: 11px 50px;
+  font-size: 22px;
+  line-height: 1.2;
+
+  &-primary {
+    border: 1px solid var(--bs-primary);
+    background: var(--bs-primary);
+
+    &:hover {
+      background: var(--bs-primary);
+      border: 1px solid var(--bs-primary);
+    }
+  }
+
+  &-invert {
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+
+    &:hover {
+      color: var(--bs-primary);
+    }
+  }
+}

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="de" prefix="og: http://ogp.me/ns#">
 
 {% include head.html %}
 
 <body>
+{% comment %}{% include nav.html %}{% endcomment %}
 
-    {% include nav.html %}
+{{ content }}
 
-    {{ content }}
+{% include footer.html %}
 
-    {% include footer.html %}
-
-    {% include ga.html %}
+{% include scripts.html %}
 
 </body>
 

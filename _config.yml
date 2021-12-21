@@ -7,8 +7,11 @@ description: "Die Homepage zum JavaScript Fachbuch 'Angular das umfassende Handb
 baseurl: ""
 url: "http://angular-buch.de"
 twitter_username: chris_hoeller
-github_username:  choeller
-email_username:  christoph.hoeller@googlemail.com
+github_username: choeller
+email_username: christoph.hoeller@googlemail.com
+collections:
+  - chapter
+  - testimonials
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
@@ -20,6 +23,6 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 paginate_path: "/blog/page:num/"
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: [ "less","node_modules","Gruntfile.js","package.json","README.md" ]
 
-gems: [jekyll-paginate, jekyll-feed]
+gems: [ jekyll-paginate, jekyll-feed ]

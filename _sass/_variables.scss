@@ -1,0 +1,31 @@
+$primary: #F5780D;
+$secondary: #2F6B7E;
+$background: #E2E7E9;
+
+$font-family: Roboto, sans-serif;
+
+$spacing: 20px;
+$spacing-xs: $spacing / 4;
+$spacing-s: $spacing / 2;
+$spacing-l: $spacing * 2;
+$spacing-xl: $spacing * 4;
+
+@function toRGB ($color) {
+  @return red($color) + ", " + green($color) + ", " + blue($color);
+}
+
+body {
+  --bs-body-font-family: #{$font-family};
+  --bs-body-bg: #{$background};
+  --bs-primary: #{$primary};
+  --bs-secondary: #{$secondary};
+  --bs-body-bg-rgb: #{toRGB($background)};
+  --bs-primary-rgb: #{toRGB($primary)};
+  --bs-secondary-rgb: #{toRGB($secondary)};
+
+  --spacing-xs: #{$spacing-xs};
+  --spacing-s: #{$spacing-s};
+  --spacing-m: #{$spacing};
+  --spacing-l: #{$spacing-l};
+  --spacing-xl: #{$spacing-xl};
+}

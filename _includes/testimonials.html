@@ -1,0 +1,75 @@
+<h2 class="headline-l mb-m">Rezensionen</h2>
+<div class="carousel slide d-lg-none"
+     data-bs-interval="10000"
+     data-bs-ride="carousel"
+     id="testimonial-slider-mobile">
+  <div class="carousel-indicators pt-m">
+    {% for testimonial in site.testimonials %}
+      <button aria-label="Testimonials {{ forloop.index0 }}"
+              data-bs-slide-to="{{ forloop.index0 }}"
+              data-bs-target="#testimonial-slider-mobile"
+              type="button"
+          {% if forloop.first %}
+            class="active"
+            aria-current="true"
+          {% endif %}
+      ></button>
+    {% endfor %}
+  </div>
+  <div class="carousel-inner" role="listbox">
+    {% for testimonial in site.testimonials %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="text-quote fst-italic">
+          »{{ testimonial.quote }}«
+        </div>
+        <div class="text-normal fw-bold">
+          {{ testimonial.source }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<div class="carousel slide d-none d-lg-block"
+     data-bs-interval="10000"
+     data-bs-ride="carousel"
+     id="testimonial-slider">
+  <div class="carousel-indicators pt-m">
+    {% for testimonial in site.testimonials %}
+      {% assign indexMod3 = forloop.index | modulo: 3 %}
+      {% if indexMod3 == 1 %}
+        <button aria-label="Testimonials {{ forloop.index0 | divided_by: 3 | plus: 1 }}"
+                data-bs-slide-to="{{ forloop.index0 | divided_by: 3 }}"
+                data-bs-target="#testimonial-slider"
+                type="button"
+            {% if forloop.first %}
+              class="active"
+              aria-current="true"
+            {% endif %}
+        ></button>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="carousel-inner" role="listbox">
+    {% for testimonial in site.testimonials %}
+      {% assign indexMod3 = forloop.index | modulo: 3 %}
+      {% if indexMod3 == 1 %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="row">
+      {% endif %}
+      <div class="col-md-4">
+        <div class="text-quote fst-italic">
+          »{{ testimonial.quote }}«
+        </div>
+        <div class="text-normal fw-bold">
+          {{ testimonial.source }}
+        </div>
+      </div>
+      {% if indexMod3 == 0 or forloop.last %}
+        </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

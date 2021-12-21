@@ -1,0 +1,19 @@
+.carousel {
+  &-indicators {
+    transform: translateY(100%);
+    margin-bottom: 0;
+
+    [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      border: 1px solid var(--bs-primary);
+      border-radius: 50%;
+      opacity: 1;
+      background-color: transparent;
+
+      &.active {
+        background-color: var(--bs-primary);
+      }
+    }
+  }
+}
