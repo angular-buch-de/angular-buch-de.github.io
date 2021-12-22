@@ -16,6 +16,7 @@
           <i class="fa fa-circle fa-stack-2x text-white"></i>
           <i class="fa fa-facebook fa-stack-1x text-secondary"></i>
         </span>
+        <span class="d-none d-lg-inline-block mr-l text-white">@{{ site.facebook_username }}</span>
       </a>
     {% endif %}
     {% if site.github_username %}
@@ -24,6 +25,7 @@
           <i class="fa fa-circle fa-stack-2x text-white"></i>
           <i class="fa fa-github fa-stack-1x text-secondary"></i>
         </span>
+        <span class="d-none d-lg-inline-block mr-l text-white">@{{ site.github_username }}</span>
       </a>
     {% endif %}
     {% if site.email_username %}
@@ -32,8 +34,9 @@
           <i class="fa fa-circle fa-stack-2x text-white"></i>
           <i class="fa fa-envelope fa-stack-1x text-secondary"></i>
         </span>
+        <span class="d-none d-lg-inline-block mr-l text-white">{{ site.email_username }}</span>
       </a>
     {% endif %}
-    <a class="align-self-end text-white" href="{{ site.baseUrl }}/impress">Impressum</a>
+    <a class="text-white text-decoration-underline" style="margin-left: auto" href="{{ site.baseUrl }}/impress">Impressum</a>
   </div>
 </footer>
