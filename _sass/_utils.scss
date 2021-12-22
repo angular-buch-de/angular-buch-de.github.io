@@ -31,11 +31,10 @@
 
 
 .headline {
-  font-weight: bold;
-
   &-xl {
     font-size: 2.7rem;
     line-height: 1;
+    font-weight: bold;
 
     @media (min-width: 768px) {
       font-size: 5rem;
@@ -45,10 +44,12 @@
   &-l {
     font-size: 2.813rem;
     line-height: 1;
+    font-weight: bold;
   }
 
   &-s {
     font-size: 1.313rem;
+    font-weight: bold;
   }
 }
 

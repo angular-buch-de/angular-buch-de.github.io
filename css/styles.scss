@@ -5,3 +5,7 @@
 @import "_sass/variables";
 @import "_sass/bootstrap/custom";
 @import "_sass/utils";
+
+a {
+  color: var(--bs-primary);
+}
