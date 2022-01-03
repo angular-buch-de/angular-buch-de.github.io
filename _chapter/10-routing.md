@@ -1,7 +1,7 @@
 ---
 
-    title: "1. Angular-Kickstart: Ihre erste Angular-Webapplikation"
-    subtitle: Routing is da shit!
+    title: "10. Routing: Navigation innerhalb der Anwendung"
+    subtitle: 
 
 ---
 
