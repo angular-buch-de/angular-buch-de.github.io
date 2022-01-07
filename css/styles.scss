@@ -6,6 +6,11 @@
 @import "_sass/bootstrap/custom";
 @import "_sass/utils";
 
+
+html, body {
+  height: 100%;
+}
+
 a {
   color: var(--bs-primary);
   text-decoration: none;
