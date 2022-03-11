@@ -7,6 +7,7 @@
 Die Container-Plattform Docker ist aus professionellen IT-Infrastrukturen nicht mehr wegzudenken, und auch für das
 Deployment von Webapplikationen bietet diese Technik viele Vorteile. Freuen Sie sich darauf, Ihre Angular-Anwendung
 Enterprise-ready zu machen!
+
 So werden Sie in den folgenden Abschnitt lernen:
 
 - Wie Sie mithilfe von Dockerfiles eigene Docker-Images definieren können.
