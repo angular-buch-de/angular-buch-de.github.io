@@ -16,3 +16,6 @@ So werden Sie im Laufe dieses Kapitels lernen:
 - Worauf Sie bei der Strukturierung Ihres Angular-CLI-Projekts achten sollten.
 - Was Mono-Repos sind und welche Vorteile diese für Ihre Projekte bringen können.
 - Wie Sie Bibliotheken in einer eigenen NPM-Registry veröffentlichen können.
+
+Quellcode zum Kapitel: [https://github.com/angularbuch/button-chooser-lib](https://github.com/angularbuch/button-chooser-lib){:target="_blank"}
+

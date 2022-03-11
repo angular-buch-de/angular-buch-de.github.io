@@ -19,3 +19,6 @@ Um dieses Problem zu lösen, werden Sie im Laufe dieses Kapitels lernen:
 - Welche Einschränkungen es bei der Entwicklung von SSR-Anwendungen gibt undwie Sie diese Einschränkungen umgehen
   können.
 - Wie Sie Ihre auf dem Server gerenderte Anwendung in der Google-Cloud deployen können.
+
+Quellcode zum Kapitel: [https://github.com/angularbuch/project-manager-ssr](https://github.com/angularbuch/project-manager-ssr){:target="_blank"}
+

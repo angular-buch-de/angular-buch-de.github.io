@@ -16,3 +16,6 @@ So werden Sie in denkommenden Abschnitten lernen:
 - Wie Sie die Schnittstelle zu Ihrem Custom Element über Input- und Output-Bindings beschreiben können.
 - Was Zoneless Components sind und warum Sie diese im Kontext von WebComponents verwenden sollten.
 - Worauf Sie achten müssen, wenn Sie Angular-Komponenten in anderen Technologie-Stacks einbinden möchten.
+
+Quellcode zum Kapitel: [https://github.com/angularbuch/button-chooser-lib](https://github.com/angularbuch/button-chooser-lib){:target="_blank"}
+
