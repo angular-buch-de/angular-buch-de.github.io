@@ -17,3 +17,6 @@ Nach Abschluss dieses Kapitels werden Sie unter anderem wissen:
 - Wie Sie typische UI-Elemente wie Navigationsleisten, Listen, dynamische Dialoge und Formulare auf Basis von Angular
   Material implementieren können.
 - Was ein Material-Design-Theme ist und wie Sie eigene Themes für Ihr Unternehmen entwerfen können.
+
+Quellcode zum Kapitel: [https://github.com/angularbuch/babywatch](https://github.com/angularbuch/babywatch){:target="_blank"}
+
