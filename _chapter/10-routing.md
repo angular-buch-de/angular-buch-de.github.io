@@ -12,7 +12,7 @@ Routenkonfiguration werden Sie dabei mit einer Vielzahl an interessanten Technik
 Laufe des Kapitels unter anderem lernen,
 
 - wie Sie beliebig tief verschachtelte Routen definieren können.
-- welche Vorteile Ihnen die Verwendung der RouterLink-DSL (Domain Specific Language) zur Erstellung von Links bietet.
+- welche Vorteile Ihnen die Verwendung der **RouterLink-DSL** (Domain Specific Language) zur Erstellung von Links bietet.
 - wie Sie dynamische Parameter an Ihre Komponenten übertragen können und welche Unterschiede es zwischen Pfad-, Matrix-
   und Query-Parametern gibt.
 - warum Sie manchmal direkt mit der Browser-URL interagieren sollten.
@@ -21,4 +21,4 @@ Laufe des Kapitels unter anderem lernen,
   verhindern.
 - wie Sie über mehrere RouterOutlets noch mehr Flexibilität bei Ihrer Routendefinition erhalten.
 
-[github.com/angularbuch/project-manager-routing](github.com/angularbuch/project-manager-routing)
+Quellcode zum Kapitel: [github.com/angularbuch/project-manager-routing](github.com/angularbuch/project-manager-routing){:target="_blank"}
