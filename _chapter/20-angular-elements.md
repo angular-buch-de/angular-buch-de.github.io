@@ -1,7 +1,6 @@
 ---
 
     title: "20. Angular Elements: Angular-Komponenten als WebComponents bereitstellen"
-    subtitle: 
 
 ---
 

@@ -1,7 +1,6 @@
 ---
 
     title: "18. Das Animationen-Framework: Angular-Anwendungen animieren"
-    subtitle: 
 
 ---
 **Animationen** wurden in der Vergangenheit oft als »Beiwerk« zur

@@ -1,7 +1,6 @@
 ---
 
     title: "15. NgModule und Lazy-Loading: Modularisierung Ihrer Anwendung"
-    subtitle: 
 
 ---
 Ihre Anwendung wächst und wächst. Nun gilt es, nicht die Kontrolle

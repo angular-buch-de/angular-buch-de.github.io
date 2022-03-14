@@ -1,7 +1,6 @@
 ---
 
     title: "18. Vollendet in Form und Funktion: Material Design und Angular Material"
-    subtitle: 
 
 ---
 

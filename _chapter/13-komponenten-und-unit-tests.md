@@ -1,7 +1,6 @@
 ---
 
     title: "13. Komponenten- und Unit-Tests: das Angular-Testing-Framework"
-    subtitle: 
 
 ---
 Tests zu schreiben ist für viele Entwickler immer noch eine lästige Pflichtaufgabe. Auf Basis des Angular-Testing-Frameworks kann es aber sogar Spaß machen. Und Ihre Nutzer werden Ihnen die verbesserte Stabilität mit Sicherheit danken!

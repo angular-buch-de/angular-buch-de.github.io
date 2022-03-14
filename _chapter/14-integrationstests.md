@@ -1,7 +1,6 @@
 ---
 
     title: "14. Cypress: komfortable Integrationstests für Ihre Anwendung"
-    subtitle: 
 
 ---
 ntegrationstests helfen Ihnen sicherzustellen, dass Ihre Anwendung

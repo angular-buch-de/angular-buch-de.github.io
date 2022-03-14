@@ -1,7 +1,6 @@
 ---
 
     title: "19. NPM-Librarys und Mono-Repos: Funktionalität in Bibliotheken aus-lagern und per NPM veröffentlichen"
-    subtitle: 
 
 ---
 

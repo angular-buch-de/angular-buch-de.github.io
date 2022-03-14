@@ -1,7 +1,6 @@
 ---
 
     title: "12. Reaktive Architekturen mit RxJS"
-    subtitle: 
 
 ---
 Nachdem Sie in den vorangegangenen Kapiteln schon in verschiedenen Bereichen
