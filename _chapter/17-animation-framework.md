@@ -21,5 +21,5 @@ sequenziell ablaufende Animationen bieten.
 - wie Sie mithilfe der `query`-Funktion komplexe Komponenten animieren können.
 - was **Staggering** bedeutet und wie Sie damit Ihre Listendarstellungen verschönern können.
 
-- Quellcode zum Kapitel: [https://github.com/angularbuch/animationen](https://github.com/angularbuch/animationen){:target="_blank"}
+Quellcode zum Kapitel: [https://github.com/angularbuch/animationen](https://github.com/angularbuch/animationen){:target="_blank"}
 
