@@ -15,3 +15,6 @@ wieso Sie gemeinsam genutzte Funktionalität in **Shared-Module** auslagern soll
 wann es sinnvoll ist, **pro Komponente ein eigenes Modul** zu definieren.
 welche Besonderheiten es beim Umgang mit **Services** zu beachten gilt.
 wie Sie **Lazy-Loading** einsetzen können, um Code erst dann zu laden, wenn er wirklich benötigt wird.
+
+Quellcode zum Kapitel: [github.com/angularbuch/project-manager-modular](github.com/angularbuch/project-manager-modular){:target="_blank"}
+

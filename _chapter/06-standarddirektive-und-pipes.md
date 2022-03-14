@@ -13,3 +13,5 @@ In diesem Kapitel möchte ich Ihnen die mit Angular **mitgelieferten Standarddir
 - wie Sie das Verhalten von Pipes wie der **DatePipe** oder der **NumberPipe** abhängig vom eingestellten Sprach-Locale verändern können.
 - inwiefern die **AsyncPipe** eine Sonderrolle unter den Pipes darstellt und wie sie Ihnen die Arbeit mit asynchronen Daten vereinfacht.
 - wie Sie eigene Pipes implementieren können und was der Unterschied zwischen **Pure und Impure** Pipes ist.
+
+Quellcode zum Kapitel: [https://github.com/angularbuch/standard-direktiven](https://github.com/angularbuch/standard-direktiven){:target="_blank"}
