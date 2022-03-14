@@ -37,10 +37,10 @@
      id="testimonial-slider">
   <div class="carousel-indicators pt-m">
     {% for testimonial in site.testimonials %}
-      {% assign indexMod3 = forloop.index | modulo: 3 %}
+      {% assign indexMod3 = forloop.index | modulo: 2 %}
       {% if indexMod3 == 1 %}
-        <button aria-label="Testimonials {{ forloop.index0 | divided_by: 3 | plus: 1 }}"
-                data-bs-slide-to="{{ forloop.index0 | divided_by: 3 }}"
+        <button aria-label="Testimonials {{ forloop.index0 | divided_by: 2 | plus: 1 }}"
+                data-bs-slide-to="{{ forloop.index0 | divided_by: 2 }}"
                 data-bs-target="#testimonial-slider"
                 type="button"
             {% if forloop.first %}
@@ -53,12 +53,12 @@
   </div>
   <div class="carousel-inner" role="listbox">
     {% for testimonial in site.testimonials %}
-      {% assign indexMod3 = forloop.index | modulo: 3 %}
+      {% assign indexMod3 = forloop.index | modulo: 2 %}
       {% if indexMod3 == 1 %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <div class="row">
       {% endif %}
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="text-quote fst-italic">
           »{{ testimonial.quote }}«
         </div>
