@@ -15,3 +15,5 @@ So werden Sie mit Abschluss dieses Kapitels wissen,
 - was **Treeshakable-Providers** sind und wie Sie diese verwenden können, um die Größe der generierten Anwendung zu optimieren.
 - warum es sinnvoll sein kann, die **Sichtbarkeit von Abhängigkeiten** zu reduzieren, und wie Angular Sie dabei unterstützt.
 - wie Sie über die Konfiguration des Lookups von Abhängigkeiten Anwendungsfälle wie **optionale Dependencys** und **rekursive Strukturen** realisieren können.
+
+Quellcode zum Kapitel: [https://github.com/angularbuch/dependency-injection](https://github.com/angularbuch/dependency-injection){:target="_blank"}
