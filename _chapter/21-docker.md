@@ -1,7 +1,6 @@
 ---
 
     title: "21. Docker: Die Anwendung im Container deployen"
-    subtitle: 
 
 ---
 Die Container-Plattform Docker ist aus professionellen IT-Infrastrukturen nicht mehr wegzudenken, und auch für das

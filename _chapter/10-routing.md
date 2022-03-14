@@ -1,7 +1,6 @@
 ---
 
     title: "10. Routing: Navigation innerhalb der Anwendung"
-    subtitle: 
 
 ---
 

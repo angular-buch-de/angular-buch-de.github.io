@@ -6,13 +6,11 @@
           id="heading-{{ forloop.index }}">
         <button aria-controls="collapse-{{ forloop.index }}"
                 aria-expanded="false"
-                class="accordion-button collapsed fw-bold pb-l"
+                class="accordion-button collapsed fw-bold"
                 data-bs-target="#collapse-{{ forloop.index }}"
                 data-bs-toggle="collapse"
                 type="button">
           <span class="headline-s fw-bolder">{{ chapter.title }}</span>
-          {% if chapter.subtitle %}<span
-              class="accordion-subheading text-normal fw-normal">{{ chapter.subtitle }}</span>{% endif %}
         </button>
       </h2>
       <div aria-labelledby="heading-{{ forloop.index }}"
