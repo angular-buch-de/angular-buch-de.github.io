@@ -8,7 +8,7 @@ baseurl: ""
 url: "http://angular-buch.de"
 twitter_username: chris_hoeller
 github_username: choeller
-email_username: christoph.hoeller@googlemail.com
+email_username: c.hoeller@beyond-interfaces.com
 collections:
   - chapter
   - testimonials
